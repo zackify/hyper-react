@@ -1,0 +1,41 @@
+{
+  "name": "hyper-react",
+  "version": "0.0.1",
+  "description": "View react components inside your terminal",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel modules --out-dir dist --ignore node_modules",
+    "dev": "babel modules --out-dir dist --watch --ignore node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zackify/hyper-react.git"
+  },
+  "keywords": [
+    "react",
+    "hyper-term",
+    "webpack"
+  ],
+  "author": "Zach Silveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zackify/hyper-react/issues"
+  },
+  "homepage": "https://github.com/zackify/hyper-react#readme",
+  "dependencies": {
+    "babel-loader": "6.3.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "3.0.0-beta.6",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-react": "^6.23.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0"
+  }
+}
