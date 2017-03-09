@@ -1,8 +1,8 @@
 const { resolve } = require('path');
 const webpack = require('webpack');
 
-module.exports = {
-  context: resolve(__dirname, './modules'),
+export default path => ({
+  context: resolve(__dirname),
 
   module: {
     loaders: [
@@ -20,6 +20,9 @@ module.exports = {
     new webpack.ProvidePlugin({
       React: 'react',
     }),
+    new webpack.DefinePlugin({
+      'process.env.component': JSON.stringify(path),
+    }),
   ],
 
   performance: {
@@ -36,4 +39,4 @@ module.exports = {
     publicPath: '/',
   },
   devtool: 'inline-eval-cheap-source-map',
-};
+});

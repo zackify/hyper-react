@@ -1,4 +1,4 @@
 import Server from './server';
-let path = `${process.cwd()}/${process.argv[2]}`;
+import 'babel-register';
 
-Server();
+Server(`${process.cwd()}/${process.argv[2]}`);
